@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chip Racers - SRP Demo</title>
+    <style>
+        body { margin: 0; padding: 20px; display: flex; justify-content: center; background: #2a2a2a; font-family: Arial; }
+        canvas { border: 3px solid #00ff00; background: #1a1a1a; }
+        #info { color: white; margin-left: 20px; }
+        .srp-note { color: #00ff00; font-size: 12px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+    <div id="info">
+        <h2>🎮 Chip Racers</h2>
+        <p>Собери <span id="chipsCount">0</span>/5 синих фишек</p>
+        <p>Уворачивайся от желтых машин!</p>
+        <div class="srp-note">
+            <strong>🔧 SRP компоненты:</strong><br>
+            gameState.js - данные<br>
+            renderer.js - отрисовка<br>
+            inputHandler.js - управление<br>
+            collisionSystem.js - столкновения<br>
+            gameRules.js - правила победы<br>
+            game.js - оркестратор
+        </div>
+    </div>
+
+    <script src="gameState.js"></script>
+    <script src="renderer.js"></script>
+    <script src="inputHandler.js"></script>
+    <script src="collisionSystem.js"></script>
+    <script src="gameRules.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
